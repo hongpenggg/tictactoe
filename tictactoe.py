@@ -1,6 +1,24 @@
 ###
 
 class TicTacToe:
+
+    '''
+    Class: TicTacToe
+    #################
+    Attributes:
+    Global: PLAYERS, N
+    Private: board
+    #################
+    Methods:
+    - __init__(): to initialise a game class
+    - reset_board(): to clear the board or to return it to clean state
+    - render_board(): to display the board for the users
+    - make_move(player_index, cell_index): to set a certain square to a player's play sign, eg X or O
+    - is_valid_move(cell_index): checks cell index for whether it is occupied and determines if such a move can be made
+    - is_full(): checks for a draw in case the whole board has been filled
+    - get_winner(): check for 3 in a row or column or diagonal
+    - game(): runs the game using a while loop and a boolean flag
+    '''
     
     PLAYERS = ('O','X')
     N = 3
